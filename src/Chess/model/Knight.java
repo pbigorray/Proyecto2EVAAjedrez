@@ -3,11 +3,25 @@ package Chess.model;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase asbtracta Knight encargada de la logica de los tipos de Knight
+ * @author Pau Bigorra
+ * @version 1.0
+ */
 public abstract class Knight extends Piece {
+    /**
+     * Constructor del Knight
+     * @param cell Celda a la que se le asigna al momento de crearse
+     * @param chessType Tipo de la pieza
+     */
     public Knight(Cell cell, ChessType chessType) {
         super(cell, chessType);
     }
 
+    /**
+     * Metodo para optener los siguientes movimientos del Knight
+     * @return Devuelve una lista de cordenadas con los movimientos
+     */
     @Override
     public List<Coordinate> getNextMovements() {
 

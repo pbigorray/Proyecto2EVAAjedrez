@@ -28,7 +28,7 @@ public class Test {
         board.hightLight(coordinates);
         Screen.show(board);
         board.resetColors();
-        board.getCellAt(new Coordinate('B',6)).getPiece().moveTo(Input.getCoordinate("Dame la letra de la cordenada a la que te quieres mover","Dame el numero"));
+        board.getCellAt(new Coordinate('B',6)).getPiece().moveTo(Input.getCoordinate("Dame la letra de la cordenada a la que te quieres mover"));
         Screen.show(board);
 
 //        Piece piece= board.getCellAt(new Coordinate('G',8)).getPiece();
